@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255; */
+  background-color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: #fff;
+  background:#000  ;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  padding: 8px 0px;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.text-gradient {
+  background: linear-gradient(90deg, #4d88c4 2.34%, #964be1 100.78%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.text-gradient_light {
+  background: linear-gradient(90deg, #455be7 2.34%, rgb(101, 59, 206) 100.78%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 36px;
+  border-radius: 40px;
+  cursor: pointer;
+  background: #2190ff;
+  min-height: 45px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dot{
+ width:16px;
+ height:16px;
+ background: rgb(20, 187, 112);
+ border-radius: 100%;
+ position:absolute;
+ margin-left:-25px;
+ margin-top:5px;
+}
